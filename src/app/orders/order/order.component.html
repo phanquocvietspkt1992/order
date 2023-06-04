@@ -1,1 +1,25 @@
-<p>order works!</p>
+<div class="text-center">
+    <H1>Order</H1>
+</div>
+<form>
+    <div class="mb-3">
+        <label class="fw-bold" class="form-label">Name</label>
+        <input [(ngModel)]="name"
+        class="form-control" 
+        type="text" 
+       
+        >
+    </div>
+    <div class="mb-3">
+        <label class="fw-bold" class="form-label">Link</label>
+        <input [(ngModel)]="link" 
+        class="form-control" >
+    </div>
+    <div class="mb-3">
+        <label class="fw-bold" class="form-label">Discount</label>
+        <input [(ngModel)]="disCount" 
+        class="form-control" >
+    </div>
+   
+    <button type="submit" (click)="submit()"  class="btn btn-primary">Submit</button>
+</form>
